@@ -1,0 +1,18 @@
+{
+    "name": "koala-framework/composer-subproject",
+    "description": "Composer Plugin that runs install script in subproject and provides koala-framework build integration",
+    "type": "composer-plugin",
+    "license": "BSD-2-Clause",
+    "require": {
+        "composer-plugin-api": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kwf\\Composer\\SubProject\\": "src/"
+        }
+    },
+    "extra": {
+        "class":"Kwf\\Composer\\SubProject\\Plugin",
+        "koala-framework-build-step": "Kwf\\Composer\\SubProject\\BuildStep"
+    }
+}
